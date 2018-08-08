@@ -1,24 +1,3 @@
 ## Notes
- - Binding
-   - class methods do not automatically bind `this` to class instance
-   - bind in constructor or in render
-     - avoid binding in render because it will bind every time render runs (think about performance)
-   - ES6 arrow functions `() => {}` can automatically bind class methods without explicit binding
- - Controlled Components
-   - Uncontrolled Components: 
-     - Form elements `<input>`, `<textarea>`, and `<select>` have own states
-     - values are modified internally when changed from the outside
- - Component Declaration
-   - Functional Stateless Components
-     - input: props
-     - output: component instance (JSX)
-     - no local state (stateless)
-       - no `this` object
-       - cannot access or update state with `this.state` or `this.setState()`
-     - no lifecycle methods, e.g. `constructor()`, `render()`
-   - ES6 Class Components
-     - extends from React component
-     - has lifecycle methods
-     - can store and manipulate state
-   - React.createClass()
-     - deprecated
+ - APIs
+ - Lifecycle Methods
